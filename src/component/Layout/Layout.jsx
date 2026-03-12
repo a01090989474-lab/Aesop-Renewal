@@ -2,11 +2,11 @@ import "./Layout.scss";
 import Header from "../common/Header/Header";
 import Footer from "../common/Footer/Footer";
 
-const Layout = ({ Children }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main>{Children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   );

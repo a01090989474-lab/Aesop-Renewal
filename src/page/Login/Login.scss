@@ -1,0 +1,149 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 220px;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  .login_image {
+    width: 50%;
+
+    img {
+      width: 525px;
+      height: 610px;
+      object-fit: cover;
+    }
+  }
+
+  .login_content {
+    width: 50%;
+    padding: 0 80px;
+
+    .login_title {
+      font-family: var(--font-bona-nova);
+      color: #333;
+      font-size: 36px;
+      line-height: 120%;
+      letter-spacing: -0.9px;
+      margin-bottom: 16px;
+    }
+
+    .login_desc {
+      font-family: var(--font-pretendard);
+      color: #333;
+      font-size: 14px;
+      line-height: 150%;
+      margin-bottom: 40px;
+    }
+
+    .login_field {
+      margin-bottom: 24px;
+
+      label {
+        display: block;
+        font-family: var(--font-pretendard);
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 8px;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #333;
+        background: transparent;
+        padding: 8px 0;
+        font-family: var(--font-pretendard);
+        font-size: 14px;
+        color: #333;
+        outline: none;
+
+        &::placeholder {
+          color: #999;
+        }
+      }
+    }
+
+    .login_find {
+      text-align: right;
+      margin-bottom: 24px;
+
+      a {
+        font-family: var(--font-pretendard);
+        font-size: 14px;
+        color: #333;
+        text-decoration: none;
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+
+    .login_btn {
+      width: 100%;
+      padding: 16px;
+      border: 1px solid #333;
+      border-radius: 999px;
+      background: transparent;
+      font-family: var(--font-pretendard);
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+      margin-bottom: 12px;
+
+      &:hover {
+        background: #603b2d;
+        color: #fdfbf2;
+        transition: all 0.2s ease;
+      }
+    }
+
+    .login_sns {
+      margin-top: 40px;
+
+      .login_sns_divider {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 24px;
+
+        &::before,
+        &::after {
+          content: "";
+          flex: 1;
+          height: 1px;
+          background: #333;
+        }
+
+        span {
+          font-family: var(--font-pretendard);
+          font-size: 14px;
+          color: #333;
+          white-space: nowrap;
+        }
+      }
+
+      .login_sns_icons {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+
+        button {
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 0;
+
+          img {
+            width: 48px;
+            height: 48px;
+          }
+        }
+      }
+    }
+  }
+}

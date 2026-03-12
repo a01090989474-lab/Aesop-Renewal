@@ -189,7 +189,7 @@ table {
   --font-libre: "Libre Baskerville", serif;
   --font-libre-italic: "Libre Baskerville", serif;
 
-  --padding-side: 150px;
+  --padding-side: 250px;
 }
 * {
   box-sizing: border-box;
@@ -197,6 +197,7 @@ table {
 
 body {
   width: 100%;
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
+  background: #fdfbf2;
 }
